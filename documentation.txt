@@ -1,0 +1,38 @@
+Rudransh Tripathi
+
+This is an image processing backend assignment made using Golang with proper error handling and a random sleep time to imitate GPU processing
+
+Installation
+sudo apt install golang go
+sudo snap install postman
+
+Testing
+postman
+go get -u github.com/gorilla/mux
+go run main.go
+Using Postman, get and post requests
+GET Request: To determine whether our job_id exists or not
+POST Request: To find out the dimensions of images mapped to a store_id, if it is present in the csv file
+
+Work Environment
+Linux Ubuntu 18.04
+Text Editor - Ubuntu
+Postman
+Libraries:
+	    "encoding/csv"
+	    "os"
+	    "fmt"
+	    "math/rand"
+	    "time"
+	    "log"
+	    "net/http"
+	    "encoding/json"
+	    "strconv"
+	    "github.com/gorilla/mux"
+	    "io/ioutil"
+	    "image"
+	    _ "image/gif"
+	    _ "image/jpeg"
+	    _ "image/png"
+
+If we are given more time, a proper UI can be formed and some frontend image uploading feature/buttons can be added to directly find the image perimeter
